@@ -16,11 +16,11 @@ export class HomeComponent {
     if (this.option == '+') {
       this.result = Number(this.numero1) + Number(this.numero2)
     } else if (this.option == '-') {
-      this.result = Number(this.numero1) + Number(this.numero2)
+      this.result = Number(this.numero1) - Number(this.numero2)
     } else if (this.option == '*') {
-      this.result = Number(this.numero1) + Number(this.numero2)
+      this.result = Number(this.numero1) * Number(this.numero2)
     } else if (this.option == '/') {
-      this.result = Number(this.numero1) + Number(this.numero2)
+      this.result = Number(this.numero1) / Number(this.numero2)
     } else {
       this.result = "Ingrese una opcion"
     }
