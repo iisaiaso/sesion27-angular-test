@@ -1,0 +1,48 @@
+<div class="bg-red-200 py-3">
+  <h1>Sesion 27 - Angular Test</h1>
+</div>
+
+<div class="mt-5 bg-blue-200 py-2 w-[40%] mx-auto">
+  <div class="flex justify-center mt-2">
+    <div class="mb-3 xl:w-40">
+      <input
+        type="text"
+        [(ngModel)]="numero1"
+        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+        placeholder="Primer numero"
+      />
+    </div>
+    {{numero1}}
+    <div class="mb-3 xl:w-40 ml-3">
+      <input
+        type="text"
+        [(ngModel)]="numero2"
+        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+        placeholder="Segundo numero"
+      />
+    </div>
+    {{numero2}}
+  </div>
+  <div class="flex justify-center">
+    <div class="mb-3 xl:w-[55%]">
+        <select
+        [(ngModel)]="option"
+          class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+        >
+          <option value="+">Suma</option>
+          <option value="-">Resta</option>
+          <option value="*">Multiplicaion</option>
+          <option value="/">Division</option>
+        </select>
+        {{option}}
+      </div>
+  </div>
+  <div class="flex justify-center">
+    <button 
+    (click)="onCalcular()"
+    class="bg-blue-500 px-5 py-1 rounded-lg hover:bg-green-600 text-white font-mono font-semibold"
+    >Calcular</button>
+  </div>
+
+  {{result}}
+</div>
