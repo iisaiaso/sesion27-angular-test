@@ -1,5 +1,9 @@
-<div class="bg-red-200 py-3 flex justify-center">
-  <h1>Sesion 27 - Angular Test</h1>
+<div class="bg-gray-800 py-3 flex justify-center hover:bg-gray-600">
+  <img src="https://www.infragistics.com/community/cfs-file/__key/communityserver-blogs-components-weblogfiles/00-00-00-09-43/8306.dev_2D00_tools_2D00_ignite_2D00_ui_2D00_angular_2D00_unit_2D00_testing_2D00_header.jpg" 
+  width="200"
+  class="rounded-full "
+  alt="test">
+  <h1 class="text-3xl font-semibold mt-4 ml-3 text-gray-300">{{title}}</h1>
 </div>
 
 <div class="mt-5 bg-blue-100 py-2 w-[40%] mx-auto">
@@ -23,24 +27,28 @@
   </div>
   <div class="flex justify-center">
     <div class="mb-3 xl:w-[55%]">
-        <select
+      <select
         [(ngModel)]="option"
-          class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
-        >
-          <option value="+">Suma</option>
-          <option value="-">Resta</option>
-          <option value="*">Multiplicaion</option>
-          <option value="/">Division</option>
-        </select>
-      </div>
+        class="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
+      >
+        <option value="+">Suma</option>
+        <option value="-">Resta</option>
+        <option value="*">Multiplicaion</option>
+        <option value="/">Division</option>
+      </select>
+    </div>
   </div>
   <div class="flex justify-center">
-    <button 
-    (click)="onCalcular(numero1,numero2,option)"
-    class="bg-blue-500 px-5 py-1 rounded-lg hover:bg-green-600 text-white font-mono font-semibold"
-    >Calcular</button>
+    <button
+      (click)="onCalcular(numero1, numero2, option)"
+      class="bg-blue-500 px-5 py-1 rounded-lg hover:bg-green-600 text-white font-mono font-semibold"
+    >
+      Calcular
+    </button>
   </div>
-  <div class="flex justify-center mt-3 shadow-xl w-3/5 mx-auto bg-blue-200 py-2 rounded-lg">
-    El resultado de la operacion :{{result}}
+  <div
+    class="flex justify-center mt-3 shadow-xl w-3/5 mx-auto bg-blue-200 rounded-lg mb-2"
+  >
+    {{ cadena }} {{ result }}
   </div>
 </div>
